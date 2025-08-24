@@ -188,5 +188,9 @@
     <string name="btn_back_to_home">Back to Home</string>
 
     <string name="lbl_expert_screen_des">"Connect with professionals who understand your needs.Fuel your fitness journey today."</string>
-
+    <string name="lbl_product_catalog">Products Catalog</string>
+    <string name="lbl_all">All</string>
+    <string name="lbl_whey">Whey Protein</string>
+    <string name="lbl_amino">Amino Acids</string>
+    <string name="lbl_pre_Workouts">Pre-Workouts</string>
 </resources>
