@@ -146,6 +146,16 @@
     <string name="lbl_expert1_des">"Specializing in vegan powerlifting nutrition, Sam delivers focused 30-minute one-on-one sessions to optimize your supplement strategy and elevate performance."</string>
     <string name="lbl_certified_level1">"Certified Level 3"</string>
 
+    <string name="lbl_expert_name2">"Chris Bumpstead"</string>
+    <string name="lbl_review2">"3.0 (20 Reviews)"</string>
+    <string name="lbl_skill2">"Muscle Gain - Vegan"</string>
+    <string name="lbl_certified_level2">"Certified Level 4"</string>
+
+    <string name="lbl_expert_name3">"Anatoly"</string>
+    <string name="lbl_review3">"4.2 (20 Reviews)"</string>
+    <string name="lbl_skill3">"Power Lifting - Non Vegan"</string>
+    <string name="lbl_certified_level3">"Certified Level 3"</string>
+
     <string name="lbl_session">"1:1Session(30 min)"</string>
     <string name="btn_book_now">"Book Now"</string>
     <string name="lbl_pick_date">"Pick a date and time"</string>
@@ -176,5 +186,7 @@
     <string name="lbl_expert">Expert</string>
     <string name="lbl_expert_val">Sam Sulek</string>
     <string name="btn_back_to_home">Back to Home</string>
+
+    <string name="lbl_expert_screen_des">"Connect with professionals who understand your needs.Fuel your fitness journey today."</string>
 
 </resources>
