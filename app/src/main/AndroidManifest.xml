@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NutriX">
         <activity
+            android:name=".ExpertBooking3"
+            android:exported="false" />
+        <activity
+            android:name=".ExpertBooking2"
+            android:exported="false" />
+        <activity
             android:name=".ExpertBooking1"
             android:exported="false" />
         <activity

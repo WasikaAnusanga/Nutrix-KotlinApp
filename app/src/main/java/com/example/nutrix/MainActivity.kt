@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             delay(1_000)
-            val intent = Intent(this@MainActivity, ExpertBooking1::class.java)
+            val intent = Intent(this@MainActivity, Expert::class.java)
             startActivity(intent)
             finish() //close MainActivity so user cant go back
         }

@@ -150,23 +150,31 @@
     <string name="btn_book_now">"Book Now"</string>
     <string name="lbl_pick_date">"Pick a date and time"</string>
     <string-array name="date_slot">
-        <item>Select Suitable Date</item>
+        <item>Select Date</item>
         <item>"25 August 2025"</item>
         <item>"26 August 2025"</item>
         <item>"27 August 2025"</item>
         <item>"28 August 2025"</item>
     </string-array>
-    <string name="lbl_time">"Time"</string>
+    <string name="lbl_time">"Time:"</string>
     <string-array name="time_Slot">
-        <item>Select Suitable Time</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
+        <item>Select Time</item>
+        <item>9 A.M</item>
+        <item>10 A.M</item>
+        <item>11 A.M</item>
+        <item>1 P.M</item>
+        <item>3 P.M</item>
     </string-array>
-    <string-array name="time_Slot2">
-        <item>A.M</item>
-        <item>P.M</item>
-    </string-array>
+
     <string name="btn_make_appointment">Make Appointment</string>
-    <string name="lbl_making_appointment">Make Appointment</string>
+    <string name="lbl_making_appointment">Appointment is being placed</string>
+    <string name="lbl_booking_success">Booking Successful</string>
+    <string name="lbl_booking_num">Booking Number</string>
+    <string name="lbl_booking_num_val">#1234</string>
+    <string name="lbl_view_booking">View Booking</string>
+
+    <string name="lbl_expert">Expert</string>
+    <string name="lbl_expert_val">Sam Sulek</string>
+    <string name="btn_back_to_home">Back to Home</string>
+
 </resources>
