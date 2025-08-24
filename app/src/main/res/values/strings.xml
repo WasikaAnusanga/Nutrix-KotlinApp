@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">NutriX</string>
+    <string name="slogan">Fuel Your Fitness Journey</string>
+
+    <string name="onboarding_screen1_topic">Your Fitness, Your Way</string>
+    <string name="onboarding_screen1_des">Set your goals and find the right supplements and routines to match your journey</string>
+    <string name="onboarding_image_content_des1">logo</string>
+    <string name="onboarding_image_content_des2">svg</string>
+    <string name="onboarding_image_content_des3">slider</string>
+
+    <string name="onboarding_screen2_topic"> Connect with Experts</string>
+    <string name="onboarding_screen2_des">Chat with trusted professionals to get advice, reviews, and personalized supplement plans</string>
+
+    <string name="onboarding_screen3_topic">Shop with Confidence</string>
+    <string name="onboarding_screen3_des">Explore high-quality products, add to cart with ease, and enjoy secure, smooth checkout</string>
+    <string name="btnNext">Next</string>
+    <string name="btnGetStarted">Get Started</string>
+
+
+    <string name="signup_topic">Sign Up</string>
+    <string name="content_des_background">back_img</string>
+    <string name="name_Lbl">Name</string>
+    <string name="name_hint">Enter Your Name</string>
+    <string name="email_Lbl">Email</string>
+    <string name="email_hint">example@gmail.com</string>
+    <string name="password_lbl">Password</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="confirm_password_lbl">Confirm Password</string>
+    <string name="confirm_password_hint">Confirm Your Password</string>
+    <string name="or_continue_lbl">or continue with</string>
+    <string name="have_account_lbl">Already have an account?</string>
+    <string name="sign_in_btn">Sign In</string>
+    <string name="create_acc_btn">Create Account</string>
+
+    <string name="login_topic">Login</string>
+    <string name="dont_have_acc">Don’t have an account?</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_products">Products</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="lbl_experts">Experts</string>
+    <string name="lbl_welcome">Welcome Back!</string>
+    <string name="lbl_wasika">Wasika Anusanga</string>
+    <string name="lbl_search">Search..</string>
+    <string name="lbl_top_selling">"Top Selling Products "</string>
+
+    <string name="carniovor_mass_name">Carnivor Mass 2KG</string>
+    <string name="carniovor_mass_price">25000</string>
+    <string name="on_creating_name">ON Creatine 500g</string>
+    <string name="on_creating_price">23500</string>
+    <string name="olimp_creatine_name">Olimp Creatine 500g</string>
+    <string name="olimp_creatine_price">25000</string>
+    <string name="on_whey_name">ON Whey 2.5KG</string>
+    <string name="on_whey_price">24000</string>
+    <string name="price_tag">LKR</string>
+    <string name="content_product_des">products</string>
+    <string name="btnExplore">Explore Now</string>
+
+    <string name="lbl_email">wasika@gmail.com</string>
+    <string name="lbl_phonenum">+94703370900</string>
+    <string name="lbl_Goal">Goal:</string>
+    <string name="lbl_Joined">Joined:</string>
+    <string name="lbl_goal_val">Build Muscle</string>
+    <string name="lbl_joined_val">July 2025</string>
+
+    <string name="btn_Order">Orders</string>
+    <string name="btn_fav">Favourites</string>
+    <string name="btn_Bookings">Bookings</string>
+    <string name="btn_Help_center">Help Center</string>
+
+    <string name="lbl_Account_Settings">Account Settings</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="btn_Change_Password">Change Password</string>
+    <string name="btn_Notifications">Notifications</string>
+    <string name="btn_Log_Out">Log Out</string>
+
+
+    <string name="lbl_edit_profile">Edit Profile</string>
+    <string name="lbl_Address">Address</string>
+    <string name="lbl_Address_val">Matara,Sri Lanka</string>
+    <string name="lbl_phone">Phone Number</string>
+    <string name="lbl_saveChanges">Save Changes</string>
+
+
+    <string name="lbl_marketplace">Marketplace</string>
+    <string name="lbl_carnivor">Carnivor Mass</string>
+    <string name="lbl_massGainer">Mass Gainer</string>
+    <string name="lbl_prod_des">Product Description</string>
+    <string name="lbl_des_product">"Carnivor Mass is a high-calorie mass gainer that uses beef protein isolate to support muscle growth.It provides a blend of proteins, carbs, and healthy fats, designed to helpindividuals increase muscle mass and overall body weight. It's ideal for those with highenergy demands or difficulty consuming enough calories through whole foods"
+    </string>
+
+    <string name="lbl_plus">"+"</string>
+    <string name="lbl_minus">"-"</string>
+    <string name="lbl_quantity">Quantity</string>
+    <string name="lbl_quantity_val">1</string>
+    <string name="lbl_Price">"Price:"</string>
+    <string name="lbl_Add_to_cart">Add To Cart</string>
+
+    <string name="lbl_my_Cart">My Cart</string>
+    <string name="lbl_weight_val1">2KG</string>
+    <string name="lbl_weight_val2">500g</string>
+    <string name="Creatine">500g</string>
+    <string name="lbl_on_creatine_name">Opium Nutrition</string>
+    <string name="lbl_on_creatine">Creatine</string>
+
+    <string name="lbl_order_summary">Order Summary</string>
+    <string name="lbl_subTotal_val">"LKR.73500"</string>
+    <string name="lbl_delivery_fee_val">"LKR.1500"</string>
+    <string name="lbl_subTotal">"Sub Total"</string>
+    <string name="lbl_delivery_fee">"Delivery Fee"</string>
+    <string name="lbl_total">Total</string>
+    <string name="lbl_Total_val">LKR.75000</string>
+    <string name="btn_checkout">"Checkout"</string>
+
+    <string name="lbl_payment">Payment</string>
+    <string name="lbl_Enter_Card">Enter Card Details</string>
+    <string name="lbl_card_holder_name">"Cardholder's Name"</string>
+    <string name="lbl_Card_num">Card Number</string>
+    <string name="lbl_Card_num_hint">Your Card Number</string>
+    <string name="lbl_expiry">Expiry</string>
+    <string name="lbl_expiry_hint">07/25</string>
+    <string name="lbl_cvc">CVC</string>
+    <string name="lbl_cvc_hint">473</string>
+    <string name="lbl_Amount">Amount</string>
+    <string name="lbl_Pay">Pay</string>
+
+    <string name="lbl_Payment_success">Payment Successful</string>
+    <string name="lbl_Successfully_paid">Successfully paid</string>
+    <string name="lbl_transaction_details">Transaction Details</string>
+    <string name="lbl_trans_id">"Transaction Id:"</string>
+    <string name="lbl_date">"Date:"</string>
+    <string name="lbl_status">"Status:"</string>
+    <string name="lbl_trans_id_val">"1234"</string>
+    <string name="lbl_date_val">"25/08/2025"</string>
+    <string name="lbl_status_val">"Success"</string>
+
+    <string name="lbl_loading">"Processing"</string>
+
+    <string name="lbl_book_your_expert">Book Your Expert</string>
+    <string name="lbl_expert_name1">"Sam Sulek"</string>
+    <string name="lbl_review1">"5.0 (20 Reviews)"</string>
+    <string name="lbl_skill1">"Power Lifting - Vegan"</string>
+    <string name="lbl_expert1_des">"Specializing in vegan powerlifting nutrition, Sam delivers focused 30-minute one-on-one sessions to optimize your supplement strategy and elevate performance."</string>
+    <string name="lbl_certified_level1">"Certified Level 3"</string>
+
+    <string name="lbl_session">"1:1Session(30 min)"</string>
+    <string name="btn_book_now">"Book Now"</string>
+    <string name="lbl_pick_date">"Pick a date and time"</string>
+    <string-array name="date_slot">
+        <item>Select Suitable Date</item>
+        <item>"25 August 2025"</item>
+        <item>"26 August 2025"</item>
+        <item>"27 August 2025"</item>
+        <item>"28 August 2025"</item>
+    </string-array>
+    <string name="lbl_time">"Time"</string>
+    <string-array name="time_Slot">
+        <item>Select Suitable Time</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="time_Slot2">
+        <item>A.M</item>
+        <item>P.M</item>
+    </string-array>
+    <string name="btn_make_appointment">Make Appointment</string>
+    <string name="lbl_making_appointment">Make Appointment</string>
+</resources>
