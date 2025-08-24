@@ -2,6 +2,7 @@ package com.example.nutrix
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -39,6 +40,22 @@ class HomeActivity : AppCompatActivity() {
         btnExpert=findViewById(R.id.expertsBtn10)
         btnExpert.setOnClickListener {
             val intent= Intent(this, Expert::class.java)
+            startActivity(intent)
+        }
+
+        val btnProductOverview=findViewById<View>(R.id.productOverbtn)
+        btnProductOverview.setOnClickListener {
+            val intent= Intent(this, ProductOverview::class.java)
+            startActivity(intent)
+        }
+        val btnExploreNow=findViewById<View>(R.id.btnExploreNow)
+        btnExploreNow.setOnClickListener {
+            val intent= Intent(this, Product::class.java)
+            startActivity(intent)
+        }
+        val btnCart=findViewById<View>(R.id.textView7)
+        btnCart.setOnClickListener {
+            val intent= Intent(this, Cart::class.java)
             startActivity(intent)
         }
 

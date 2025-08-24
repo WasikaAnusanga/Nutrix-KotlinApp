@@ -3,7 +3,9 @@ package com.example.nutrix
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,9 +33,22 @@ class Login : AppCompatActivity() {
 
         }
         btnSignIn.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
 
+
+        }
+        btnSignIn.setOnClickListener {
+
+            var edtEmail=findViewById<EditText>(R.id.edtEmail3)
+            var edtPassword=findViewById<EditText>(R.id.edtPassword4)
+
+            if(edtEmail.text.isEmpty()){
+                edtEmail.error="Email Is required"
+            }else if(edtPassword.text.isEmpty()){
+                Toast.makeText(this,"Must enter a Password", Toast.LENGTH_LONG).show()
+            }else{
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

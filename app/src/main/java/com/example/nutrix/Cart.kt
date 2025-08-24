@@ -2,6 +2,7 @@ package com.example.nutrix
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -59,5 +60,28 @@ class Cart : AppCompatActivity() {
             val intent= Intent(this, Expert::class.java)
             startActivity(intent)
         }
+
+//        var btnAdd=findViewById<Button>(R.id.button7)
+//        var btnMinus=findViewById<Button>(R.id.button4)
+//        var amount=findViewById<TextView>(R.id.textView71)
+//        var count=findViewById<TextView>(R.id.textView69)
+//
+//        var real=amount.text.toString().toInt()
+//        var value2=0
+//        btnAdd.setOnClickListener {
+//
+//
+//
+//            if(count.text.toString().toInt()<=1){
+//                return@setOnClickListener
+//            }
+//            else{
+//                var value1 =count.text.toString().toInt()+1
+//
+//                value2=value2+real
+//                count.text=value1.toString()
+//
+//            }
+//        }
     }
 }

@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         lifecycleScope.launch {
-            delay(1_000)
-            val intent = Intent(this@MainActivity, Product::class.java)
+            delay(2_000)
+            val intent = Intent(this@MainActivity, Profile::class.java)
             startActivity(intent)
             finish() //close MainActivity so user cant go back
         }

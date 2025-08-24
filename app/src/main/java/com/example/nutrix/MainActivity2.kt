@@ -2,39 +2,29 @@ package com.example.nutrix
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
-class ExpertBooking3 : AppCompatActivity() {
-
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_expert_booking3)
+        setContentView(R.layout.activity_main2)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var btnHome=findViewById<Button>(R.id.btnbackHome)
-        btnHome.setOnClickListener {
-            val intent= Intent(this, HomeActivity::class.java)
+        lifecycleScope.launch {
+            delay(2_000)
+            val intent = Intent(this@MainActivity2, OnboardingScreen1::class.java)
             startActivity(intent)
-        }
-
-        var btnBack=findViewById<View>(R.id.backButton1)
-        btnBack.setOnClickListener {
-            val intent= Intent(this, Expert::class.java)
-            startActivity(intent)
-        }
-        var btnCart=findViewById<View>(R.id.textView56)
-        btnCart.setOnClickListener {
-            val intent= Intent(this, Cart::class.java)
-            startActivity(intent)
+            finish() //close MainActivity so user cant go back
         }
     }
 }

@@ -2,6 +2,7 @@ package com.example.nutrix
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
@@ -15,9 +16,12 @@ class Profile : AppCompatActivity() {
     private lateinit var btnProduct: ImageView
     private lateinit var btnExpert: ImageView
     private lateinit var btnProfile: ImageView
+    private lateinit var btnEditProfile: View
+    private lateinit var btnEditProfile2: View
     lateinit var btnLog: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
@@ -54,6 +58,15 @@ class Profile : AppCompatActivity() {
             val intent= Intent(this, Profile::class.java)
             startActivity(intent)
         }
-
+        btnEditProfile=findViewById(R.id.editProfileBtn)
+        btnEditProfile.setOnClickListener {
+            val intent= Intent(this, EditProfile::class.java)
+            startActivity(intent)
+        }
+        btnEditProfile2=findViewById(R.id.textView47)
+        btnEditProfile.setOnClickListener {
+            val intent= Intent(this, EditProfile::class.java)
+            startActivity(intent)
+        }
     }
 }

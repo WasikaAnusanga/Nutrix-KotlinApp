@@ -14,32 +14,70 @@
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/backButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/icon_back_arrow_head"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/editProfileBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editProfileBtn" />
+
+            <TextView
+                android:id="@+id/backButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/icon_back_arrow_head"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button" />
+
+            <TextView
+                android:id="@+id/backButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/icon_back_arrow_head"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/btnLogOut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnLogOut" />
+
+            <TextView
+                android:id="@+id/backButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/icon_back_arrow_head"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button2" />
 
             <Button
                 android:id="@+id/btnLogOut"
-                android:layout_width="342dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/orange"
-                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/white"
                 android:text="@string/btn_Log_Out"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:cornerRadius="50dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.376"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button2"
-                app:layout_constraintVertical_bias="0.576"
-                tools:ignore="TextContrastCheck" />
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
@@ -48,7 +86,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck">
 
                 <TextView
                     android:id="@+id/textView27"
@@ -129,6 +168,7 @@
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="60dp"
                     android:layout_marginEnd="278dp"
+                    android:contentDescription="@string/content_des_background"
                     android:src="@drawable/icon_profile_picture"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -192,60 +232,59 @@
                 android:id="@+id/textView46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:text="@string/lbl_Account_Settings"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-                app:layout_constraintVertical_bias="0.021" />
+                app:layout_constraintVertical_bias="0.49" />
 
             <Button
                 android:id="@+id/editProfileBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="11dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/btn_edit_profile"
                 android:textColor="@color/black"
-                android:textSize="16dp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/textView47"
                 app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="8dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/btn_Change_Password"
                 android:textColor="@color/black"
-                android:textSize="16dp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
                 app:layout_constraintTop_toBottomOf="@+id/editProfileBtn" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="17dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="242dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/btn_Notifications"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
                 app:layout_constraintTop_toBottomOf="@+id/button" />
 
             <TextView
                 android:id="@+id/textView47"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:background="@drawable/icon_profile"
                 app:layout_constraintBottom_toBottomOf="@+id/editProfileBtn"
                 app:layout_constraintStart_toStartOf="parent"
@@ -253,9 +292,9 @@
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:background="@drawable/icon_change_pass"
                 app:layout_constraintBottom_toBottomOf="@+id/button"
                 app:layout_constraintStart_toStartOf="parent"
@@ -263,13 +302,69 @@
 
             <TextView
                 android:id="@+id/textView22"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:background="@drawable/icon_notifi"
                 app:layout_constraintBottom_toBottomOf="@+id/button2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/button2" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="162dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="-20dp"
+                android:contentDescription="@string/content_des_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:srcCompat="@drawable/img_order_box" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="162dp"
+                android:layout_height="118dp"
+                android:layout_marginEnd="28dp"
+                android:contentDescription="@string/content_des_background"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView35"
+                app:srcCompat="@drawable/img_fav_box" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="162dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="18dp"
+                android:contentDescription="@string/content_des_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                app:srcCompat="@drawable/img_bookin_box" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="162dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="28dp"
+                android:contentDescription="@string/content_des_background"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView37"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/img_help_center_box" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/icon_log_out"
+                app:layout_constraintBottom_toBottomOf="@+id/btnLogOut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnLogOut" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -284,7 +379,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
 
         <LinearLayout
             android:layout_width="381dp"
@@ -296,7 +392,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.605"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VisualLintBounds">
 
             <ImageView
                 android:id="@+id/homeBtn10"
@@ -305,7 +402,9 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="17dp"
                 android:layout_marginEnd="50dp"
-                app:srcCompat="@drawable/icon_home_4" />
+                android:contentDescription="@string/content_des_background"
+                app:srcCompat="@drawable/icon_home_4"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/productBtn10"
@@ -313,7 +412,9 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="50dp"
-                app:srcCompat="@drawable/icon_products" />
+                android:contentDescription="@string/content_des_background"
+                app:srcCompat="@drawable/icon_products"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/expertsBtn10"
@@ -321,7 +422,9 @@
                 android:layout_height="30dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="50dp"
-                app:srcCompat="@drawable/icon_experts" />
+                android:contentDescription="@string/content_des_background"
+                app:srcCompat="@drawable/icon_experts"
+                tools:ignore="ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/profileBtn10"
@@ -329,7 +432,9 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="50dp"
-                app:srcCompat="@drawable/icon_profile_bold" />
+                android:contentDescription="@string/content_des_background"
+                app:srcCompat="@drawable/icon_profile_bold"
+                tools:ignore="ImageContrastCheck" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
