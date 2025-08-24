@@ -2,8 +2,11 @@ package com.example.nutrix
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,6 +17,8 @@ class Payment : AppCompatActivity() {
     private lateinit var btnProduct: ImageView
     private lateinit var btnExpert: ImageView
     private lateinit var btnProfile: ImageView
+
+    private lateinit var btnPay: Button
     private lateinit var btnBack: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,5 +59,36 @@ class Payment : AppCompatActivity() {
             val intent= Intent(this, Expert::class.java)
             startActivity(intent)
         }
+
+
+        btnPay=findViewById(R.id.payButton)
+        btnPay.setOnClickListener {
+
+                var cardName=findViewById<EditText>(R.id.editTextText5)
+                var cardNum=findViewById<EditText>(R.id.editTextText6)
+                var expiryDate=findViewById<EditText>(R.id.editTextText7)
+                var cvc=findViewById<EditText>(R.id.editTextText8)
+
+
+
+                if(cardName.text.isEmpty())
+                {
+                    cardName.error="Name is required"
+                }else if(cardNum.text.isEmpty()){
+                    cardNum.error="Card Number is required"
+                }else if(expiryDate.text.isEmpty()){
+                    cardNum.error="Expiry is required"
+                }else if(cvc.text.isEmpty()){
+                    cardNum.error="CVC is required"
+                }else{
+                    val intent= Intent(this, PaymentLoading::class.java)
+                    intent.putExtra("name",cardName.text.toString());//Passing data to the next layout
+                    intent.putExtra("num",cardNum.text.toString());
+                    intent.putExtra("expiry",expiryDate.text.toString());
+                    intent.putExtra("cvc",cvc.text.toString());
+                    startActivity(intent)
+                }
+        }
+
     }
 }

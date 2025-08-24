@@ -182,7 +182,7 @@
             android:background="@drawable/input_rectangle_2"
             android:ems="10"
             android:fontFamily="@font/poppins"
-            android:inputType="text"
+            android:inputType="phone"
             android:paddingLeft="15dp"
             android:text="@string/lbl_phonenum"
             android:textSize="20sp" />
