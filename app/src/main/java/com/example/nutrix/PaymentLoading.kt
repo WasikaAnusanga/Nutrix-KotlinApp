@@ -36,7 +36,7 @@ class PaymentLoading : AppCompatActivity() {
             delay(3_000)
             val intent = Intent(this@PaymentLoading, PaymentSuccess::class.java)
             startActivity(intent)
-            finish() //close MainActivity so user cant go back
+            finish()
         }
     }
 }
