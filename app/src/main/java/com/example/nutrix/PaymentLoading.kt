@@ -3,6 +3,7 @@ package com.example.nutrix
 import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -30,11 +31,13 @@ class PaymentLoading : AppCompatActivity() {
         num.setText(intent.getStringExtra("num"))
         expiry.setText(intent.getStringExtra("expiry"))
         cvc.setText(intent.getStringExtra("cvc"))
+        findViewById<TextView>(R.id.textView105).setText(intent.getStringExtra("amount"))
 
 
         lifecycleScope.launch {
             delay(3_000)
             val intent = Intent(this@PaymentLoading, PaymentSuccess::class.java)
+            intent.putExtra("amount",findViewById<TextView>(R.id.textView105).text.toString())
             startActivity(intent)
             finish()
         }

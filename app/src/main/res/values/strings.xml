@@ -107,12 +107,12 @@
     <string name="lbl_on_creatine">Creatine</string>
 
     <string name="lbl_order_summary">Order Summary</string>
-    <string name="lbl_subTotal_val">"LKR.73500"</string>
-    <string name="lbl_delivery_fee_val">"LKR.1500"</string>
+    <string name="lbl_subTotal_val">"73500"</string>
+    <string name="lbl_delivery_fee_val">"1500"</string>
     <string name="lbl_subTotal">"Sub Total"</string>
     <string name="lbl_delivery_fee">"Delivery Fee"</string>
     <string name="lbl_total">Total</string>
-    <string name="lbl_Total_val">LKR.75000</string>
+    <string name="lbl_Total_val">75000</string>
     <string name="btn_checkout">"Checkout"</string>
 
     <string name="lbl_payment">Payment</string>

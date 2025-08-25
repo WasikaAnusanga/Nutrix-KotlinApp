@@ -147,7 +147,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp">
+            android:layout_height="135dp"
+            tools:ignore="TextSizeCheck">
 
             <Button
                 android:id="@+id/button4"
@@ -160,7 +161,8 @@
                 android:textSize="20sp"
                 app:cornerRadius="200dp"
                 app:layout_constraintStart_toEndOf="@+id/textView57"
-                app:layout_constraintTop_toBottomOf="@+id/textView68" />
+                app:layout_constraintTop_toBottomOf="@+id/textView68"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/button7"
@@ -173,7 +175,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/button4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/button4"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
                 android:id="@+id/textView69"
@@ -232,7 +235,8 @@
                 app:layout_constraintEnd_toEndOf="@+id/textView57"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView57"
-                app:srcCompat="@drawable/img_carnivor_mass" />
+                app:srcCompat="@drawable/img_carnivor_mass"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/textView70"
@@ -259,7 +263,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/textView70"
                 app:layout_constraintEnd_toStartOf="@+id/textView72"
                 app:layout_constraintStart_toEndOf="@+id/textView70"
-                app:layout_constraintTop_toTopOf="@+id/textView70" />
+                app:layout_constraintTop_toTopOf="@+id/textView70"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/textView72"
@@ -280,7 +285,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp">
+            android:layout_height="135dp"
+            tools:ignore="TextSizeCheck">
 
             <TextView
                 android:id="@+id/textView84"
@@ -293,7 +299,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView83"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView83" />
+                app:layout_constraintTop_toTopOf="@+id/textView83"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/textView83"
@@ -348,6 +355,7 @@
                 android:id="@+id/imageView22"
                 android:layout_width="79dp"
                 android:layout_height="85dp"
+                android:contentDescription="@string/content_des_background"
                 app:layout_constraintBottom_toBottomOf="@+id/textView73"
                 app:layout_constraintEnd_toEndOf="@+id/textView73"
                 app:layout_constraintStart_toStartOf="@+id/textView73"
@@ -410,7 +418,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp">
+            android:layout_height="135dp"
+            tools:ignore="TextSizeCheck">
 
             <TextView
                 android:id="@+id/textView93"
@@ -472,7 +481,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/textView90"
                 app:layout_constraintEnd_toStartOf="@+id/textView92"
                 app:layout_constraintStart_toEndOf="@+id/textView90"
-                app:layout_constraintTop_toTopOf="@+id/textView90" />
+                app:layout_constraintTop_toTopOf="@+id/textView90"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/textView90"
@@ -526,6 +536,7 @@
                 android:id="@+id/imageView26"
                 android:layout_width="79dp"
                 android:layout_height="85dp"
+                android:contentDescription="@string/content_des_background"
                 app:layout_constraintBottom_toBottomOf="@+id/textView87"
                 app:layout_constraintEnd_toEndOf="@+id/textView87"
                 app:layout_constraintStart_toStartOf="@+id/textView87"
@@ -541,7 +552,48 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="TextSizeCheck,VisualLintBounds">
+
+        <TextView
+            android:id="@+id/textView139"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/price_tag"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView103"
+            app:layout_constraintEnd_toStartOf="@+id/textView104"
+            app:layout_constraintTop_toTopOf="@+id/textView103" />
+
+        <TextView
+            android:id="@+id/textView134"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/price_tag"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView99"
+            app:layout_constraintEnd_toStartOf="@+id/textView98"
+            app:layout_constraintTop_toTopOf="@+id/textView99" />
+
+        <TextView
+            android:id="@+id/textView136"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/price_tag"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView101"
+            app:layout_constraintEnd_toStartOf="@+id/textView100"
+            app:layout_constraintTop_toTopOf="@+id/textView101" />
 
         <TextView
             android:id="@+id/textView98"
@@ -649,10 +701,10 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="28dp"
             android:background="@drawable/shape_line"
-            android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView98" />
+            app:layout_constraintTop_toBottomOf="@+id/textView98"
+            tools:ignore="TextSizeCheck" />
 
         <Button
             android:id="@+id/checkoutBtn"
@@ -669,6 +721,7 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView102"
-            app:layout_constraintVertical_bias="0.833" />
+            app:layout_constraintVertical_bias="0.833"
+            tools:ignore="TextContrastCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

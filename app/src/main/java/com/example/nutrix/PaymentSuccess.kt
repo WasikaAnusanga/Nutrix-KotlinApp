@@ -26,6 +26,7 @@ class PaymentSuccess : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        findViewById<TextView>(R.id.textView107).setText(intent.getStringExtra("amount"))
         btnHome=findViewById(R.id.homeBtn10)
         btnHome.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)

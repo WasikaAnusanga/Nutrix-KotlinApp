@@ -28,9 +28,11 @@ class Cart : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var total=findViewById<TextView>(R.id.textView104)
         btnCheckout=findViewById(R.id.checkoutBtn)
         btnCheckout.setOnClickListener {
             val intent= Intent(this, Payment::class.java)
+            intent.putExtra("amount",total.text.toString())
             startActivity(intent)
         }
         btnBack=findViewById(R.id.backButton2)
@@ -61,27 +63,33 @@ class Cart : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        var btnAdd=findViewById<Button>(R.id.button7)
-//        var btnMinus=findViewById<Button>(R.id.button4)
-//        var amount=findViewById<TextView>(R.id.textView71)
-//        var count=findViewById<TextView>(R.id.textView69)
-//
-//        var real=amount.text.toString().toInt()
-//        var value2=0
-//        btnAdd.setOnClickListener {
-//
-//
-//
-//            if(count.text.toString().toInt()<=1){
-//                return@setOnClickListener
-//            }
-//            else{
-//                var value1 =count.text.toString().toInt()+1
-//
-//                value2=value2+real
-//                count.text=value1.toString()
-//
-//            }
-//        }
+        var btnAdd=findViewById<Button>(R.id.button7)
+        var btnMinus=findViewById<Button>(R.id.button4)
+        var amount=findViewById<TextView>(R.id.textView71)
+        var count=findViewById<TextView>(R.id.textView69)
+        var subTotal=findViewById<TextView>(R.id.textView100)
+
+
+
+        var real=amount.text.toString().toInt()
+
+        btnAdd.setOnClickListener {
+            count.text=(count.text.toString().toInt()+1).toString()
+            amount.text=(amount.text.toString().toInt()+real).toString()
+            subTotal.text=(subTotal.text.toString().toInt()+real).toString()
+            total.text=(total.text.toString().toInt()+real).toString()
+        }
+        btnMinus.setOnClickListener {
+            if(count.text.toString().toInt()<1){
+                return@setOnClickListener
+            }else{
+                count.text=(count.text.toString().toInt()-1).toString()
+                amount.text=(amount.text.toString().toInt()-real).toString()
+                subTotal.text=(subTotal.text.toString().toInt()-real).toString()
+                total.text=(total.text.toString().toInt()-real).toString()
+            }
+
+
+        }
     }
 }

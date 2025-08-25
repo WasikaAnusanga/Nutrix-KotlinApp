@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
@@ -16,6 +17,11 @@ import androidx.core.view.WindowInsetsCompat
 class ExpertBooking1 : AppCompatActivity() {
     lateinit var btnCart: TextView
     lateinit var btnBack: TextView
+
+    private lateinit var btnHome: ImageView
+    private lateinit var btnProduct: ImageView
+    private lateinit var btnExpert: ImageView
+    private lateinit var btnProfile: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +55,28 @@ class ExpertBooking1 : AppCompatActivity() {
         btnCart=findViewById(R.id.textView56)
         btnCart.setOnClickListener {
             val intent= Intent(this, Cart::class.java)
+            startActivity(intent)
+        }
+        btnHome=findViewById(R.id.homeBtn11)
+        btnHome.setOnClickListener {
+            val intent= Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        btnProfile=findViewById(R.id.profileBtn11)
+        btnProfile.setOnClickListener {
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+
+        }
+        btnProduct=findViewById(R.id.productBtn11)
+        btnProduct.setOnClickListener {
+            val intent= Intent(this, Product::class.java)
+            startActivity(intent)
+        }
+
+        btnExpert=findViewById(R.id.expertsBtn11)
+        btnExpert.setOnClickListener {
+            val intent= Intent(this, Expert::class.java)
             startActivity(intent)
         }
 

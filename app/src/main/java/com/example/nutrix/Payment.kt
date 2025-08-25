@@ -29,6 +29,9 @@ class Payment : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var amount=findViewById<TextView>(R.id.textView105)
+
+        amount.setText(intent.getStringExtra("amount"))
 
         btnBack=findViewById(R.id.backButton1)
         btnBack.setOnClickListener {
@@ -77,15 +80,16 @@ class Payment : AppCompatActivity() {
                 }else if(cardNum.text.isEmpty()){
                     cardNum.error="Card Number is required"
                 }else if(expiryDate.text.isEmpty()){
-                    cardNum.error="Expiry is required"
+                    expiryDate.error="Expiry is required"
                 }else if(cvc.text.isEmpty()){
-                    cardNum.error="CVC is required"
+                    cvc.error="CVC is required"
                 }else{
                     val intent= Intent(this, PaymentLoading::class.java)
                     intent.putExtra("name",cardName.text.toString());//Passing data to the next layout
                     intent.putExtra("num",cardNum.text.toString());
                     intent.putExtra("expiry",expiryDate.text.toString());
                     intent.putExtra("cvc",cvc.text.toString());
+                    intent.putExtra("amount",amount.text.toString())
                     startActivity(intent)
                 }
         }
