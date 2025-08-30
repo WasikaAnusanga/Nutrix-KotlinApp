@@ -43,22 +43,22 @@ class SignUp : AppCompatActivity() {
 
             var pw1=edtPassword.text.toString()
             var pw2=edtPassword2.text.toString()
-
+            var valid=true;
             if(edtName.text.isEmpty())
             {
                 edtName.error="Name is required"
-            }else if(edtEmail.text.isEmpty()){
+            }
+            else if(edtEmail.text.isEmpty()){
                 edtEmail.error="Email is required"
             }
+
             else if(pw1!=pw2){
                 Toast.makeText(this,"Password mismatch", Toast.LENGTH_LONG).show()
+
             }else{
                 val intent = Intent(this, Login::class.java)
                 startActivity(intent)
             }
-
-
-
         }
     }
 }
